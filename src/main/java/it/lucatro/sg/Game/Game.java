@@ -46,9 +46,8 @@ public class Game {
             }
         }.runTaskTimer(SurvivalGames.getInstance(), 20, 20);
 
-        for(Player player : SurvivalGames.getInstance().getMatch().getPlayers()) {
-            player.sendMessage("Game is starting with " + SurvivalGames.getInstance().getMatch().getPlayers().toArray().length + " players");
-        }
+        Bukkit.broadcastMessage("Game is starting with " + SurvivalGames.getInstance().getMatch().getPlayers().toArray().length + " players");
+
     }
 
     public void teleport() {

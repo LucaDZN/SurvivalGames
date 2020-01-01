@@ -16,14 +16,10 @@ public final class SurvivalGames extends JavaPlugin {
         match = new Game(12, 2);
         instance = this;
 
-        if(this.getMatch().getPlayers().toArray().length == 2) {
-            this.getMatch().start();
-        }
-
         this.getCommand("startGame").setExecutor(new CommandStart());
         this.getCommand("getStatus").setExecutor(new CommandStatus());
         getServer().getPluginManager().registerEvents(new Events(), this);
-        
+
     }
 
     @Override

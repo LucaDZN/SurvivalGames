@@ -2,7 +2,6 @@ package it.lucatro.sg.Events;
 
 import it.lucatro.sg.Game.GameStatus;
 import it.lucatro.sg.SurvivalGames;
-import it.lucatro.sg.SurvivalGames;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -40,8 +39,6 @@ public class Events implements Listener {
 
         if(SurvivalGames.getInstance().getMatch().inGame(player)) {
             SurvivalGames.getInstance().getMatch().getPlayers().remove(player);
-        } else {
-            return;
         }
     }
 
@@ -53,7 +50,6 @@ public class Events implements Listener {
                 player.kickPlayer(ChatColor.RED + "You are dead!");
             }
         }
-        return;
     }
 
 }
