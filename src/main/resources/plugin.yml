@@ -1,0 +1,8 @@
+name: SurvivalGames
+version: ${project.version}
+main: it.lucatro.sg.SurvivalGames
+commands:
+  startGame:
+    description: Force the game start
+  getStatus:
+    description: Get the game's status
