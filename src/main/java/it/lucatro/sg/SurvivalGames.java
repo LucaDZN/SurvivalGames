@@ -13,7 +13,7 @@ public final class SurvivalGames extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        match = new Game(12, 2);
+        match = new Game(12, 1);
         instance = this;
 
         this.getCommand("startGame").setExecutor(new CommandStart());
