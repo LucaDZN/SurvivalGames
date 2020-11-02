@@ -44,7 +44,7 @@ public class Events implements Listener {
 
     @EventHandler
     public void onDead(PlayerDeathEvent event) {
-        Player player = (Player) event.getEntity();
+        Player player = event.getEntity();
         if(SurvivalGames.getInstance().getMatch().getStatus().equals(GameStatus.IN_GAME)) {
             if (SurvivalGames.getInstance().getMatch().inGame(player)) {
                 player.kickPlayer(ChatColor.RED + "You are dead!");
