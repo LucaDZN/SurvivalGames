@@ -6,3 +6,5 @@ commands:
     description: Force the game start
   getStatus:
     description: Get the game's status
+  setloc:
+    description: Set the location
