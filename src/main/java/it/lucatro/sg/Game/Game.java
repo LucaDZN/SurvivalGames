@@ -93,6 +93,14 @@ public class Game {
         usersGame.add(player);
     }
 
+    public void removePlayer(Player player) {
+        if(usersGame.contains(player)) {
+            usersGame.remove(player);
+        } else {
+            player.sendMessage("You are not in game");
+        }
+    }
+
     public List<Player> getPlayers() {
         return usersGame;
     }
